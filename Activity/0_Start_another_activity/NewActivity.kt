@@ -1,4 +1,4 @@
-package com.example.androidstudio
+package com.example.basicandroid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,8 +12,8 @@ class NewActivity : AppCompatActivity() {
         var data = intent.getParcelableExtra<User>("user")
         if (data != null) {
             textView_new_name.text = data.name
+            textView_new_email.text = data.email
         }
-
 
     }
 }
